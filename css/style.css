@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  /* outline: 3px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: antiquewhite; }
+
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+  margin: 0 auto; }
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .title__principal {
+    color: red;
+    font-size: 10rem; }

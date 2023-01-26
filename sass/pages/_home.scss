@@ -1,0 +1,10 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__principal {
+    color: red;
+    font-size: 10rem;
+  }
+}
