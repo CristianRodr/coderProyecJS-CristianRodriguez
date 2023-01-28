@@ -1,9 +1,10 @@
 let ropa;
 let operacion;
+let contador = 0;
 
 function seleccion() {
-  alert('Seleccione marca de ropa');
-  ropa = prompt('| Armani | Adidas | Guess | Nike |').toLowerCase();
+  alert('Seleccione y escribe marca de ropa a comprar ✍️(◔◡◔)');
+  ropa = prompt('|⌜ Armani ⌟|⌜ Adidas ⌟|⌜ Guess ⌟|⌜ Nike ⌟|').toLowerCase();
   ingresoVentas(ropa);
 }
 
@@ -13,9 +14,11 @@ ingresoVentas(ropa);
 function ingresoVentas(ropa) {
   switch (ropa) {
     case 'armani':
-      alert('Ingrese los valores de a, b y c de su producto a elegir');
+      alert(
+        '( •̀ .̫ •́ )✧ Escriba los valores de 👉 a, 👉 b 👉 c → de su producto a elegir'
+      );
       let colecionUno = prompt(
-        '◾ A Camisa de Algodon ◾ B Pantalones Informales ◾ C Camisa Jersey'
+        '◢◤ A. Camisa de Algodon ◢◤ B. Pantalones Informales ◢◤ C. Camisa Jersey ◢◤'
       ).toLowerCase();
       if (colecionUno === 'a') {
         colecionUno = 40;
@@ -31,9 +34,11 @@ function ingresoVentas(ropa) {
       }
       break;
     case 'adidas':
-      alert('Ingrese los valores de a, b y c de su producto a elegir');
+      alert(
+        '( •̀ .̫ •́ )✧ Escriba los valores de 👉 a, 👉 b 👉 c → de su producto a elegir'
+      );
       let colecionDos = prompt(
-        '◾ A Playera Manchester ◾ B Hoodie Terrex ◾ C Shorts Deportivos'
+        '◢◤ A. Playera Manchester ◢◤ B. Hoodie Terrex ◢◤ C. Shorts Deportivos ◢◤'
       ).toLowerCase();
       if (colecionDos === 'a') {
         colecionDos = 60;
@@ -48,9 +53,11 @@ function ingresoVentas(ropa) {
       }
       break;
     case 'guess':
-      alert('Ingrese los valores de a, b y c de su producto a elegir');
+      alert(
+        '( •̀ .̫ •́ )✧ Escriba los valores 👉 a, 👉 b 👉 c → de su producto a elegir'
+      );
       let colecionTres = prompt(
-        '◾ A Playera Manga ◾ B Bata Kimono ◾ C Jeans Pasarela'
+        '◢◤ A. Playera Manga ◢◤ B. Bata Kimono ◢◤ C. Jeans ◢◤'
       ).toLowerCase();
       if (colecionTres === 'a') {
         colecionTres = 90;
@@ -66,9 +73,11 @@ function ingresoVentas(ropa) {
       }
       break;
     case 'nike':
-      alert('Ingrese los valores de a, b y c de su producto a elegir');
+      alert(
+        '( •̀ .̫ •́ )✧ Escriba los valores de 👉 a, 👉 b 👉 c → de su producto a elegir'
+      );
       let colecionCuatro = prompt(
-          '◾ A Playera Manga ◾ B Bata Kimono ◾ C Jeans Pasarela'
+        '◤ A. Playera Manga ◢◤ B. Bata Kimono ◢◤ C. Jeans Pasarela ◢'
       ).toLowerCase();
       if (colecionCuatro === 'a') {
         colecionCuatro = 22;
@@ -89,30 +98,28 @@ function ingresoVentas(ropa) {
 }
 
 function calculador(colecion) {
-  alert('precio prenda: ' + colecion);
-  const confirmacion = confirm('Desea comprar la prenda');
+  alert('precio prenda 💲 ' + colecion);
+  const confirmacion = confirm('Desea comprar la prenda 🤤');
   if (confirmacion === true) {
-    alert('Gracias por la compra');
+    alert('Gracias por la compra (￣y▽￣)╭ Ohohoho.....');
   }
   agregarVenta(colecion);
 }
 
 function agregarVenta(venta) {
-  //console.log(venta);
-  suma(venta);
-  const confirmacion = confirm('Desea comprar mas productos');
+  contador += venta;
+  suma(contador);
+  const confirmacion = confirm('Desea comprar mas productos ヾ(⌐■_■)ノ♪');
   if (confirmacion === true) {
     seleccion();
-  } else  {
-    alert('Gracias 👌');
+  } else if (confirmacion === false) {
+    alert('Gracias ヾ(￣▽￣) Bye~Bye~');
+    Esc;
   }
 }
 
 function suma(venta) {
-
+  alert('Total en canasta 💲 ' + venta);
 }
-
-
-
 
 ingresoVentas(ropa);
