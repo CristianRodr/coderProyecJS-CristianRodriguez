@@ -2,9 +2,9 @@
 
 const encuesta = {
     pregunta: '¿Cuál es su marca de ropa favorita?',
-    opciones: ['0: Mango', '1: Zara', '2: Levis', '3: Tommy Hilfiger'],
+    opciones: ['0: otras', '1: Mango', '2: Zara', '3: Levis', '4: Tommy Hilfiger'],
 
-    respuestas: new Array(4).fill(0),
+    respuestas: new Array(5).fill(0),
     //obtener respuesta
     registrarNuevaRespuesta() {
         const registrar = Number(
