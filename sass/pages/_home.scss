@@ -1,10 +1,25 @@
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container {
+  margin: 0 auto;
+  max-width: 128rem;
+  height: 34.4rem;
+  overflow: hidden;
+}
 
-  &__principal {
-    color: red;
-    font-size: 10rem;
-  }
+.encabezado {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  width: 60.8rem;
+  height: 12.2rem;
+  margin-top: 4rem;
+}
+
+.title__event {
+  color: $color-primary;
+  font-weight: 900;
+  font-size: 5rem;
+  left: 6.5rem;
+  text-align: center;
 }
