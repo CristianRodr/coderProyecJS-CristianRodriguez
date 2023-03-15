@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/script.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <title>Title</title>
-  </head>
-  <body>
-    <header class="container">
-      <div class="encabezado">
-        <div class="title">
-          <h1 class="title__event">FIND BEST EVENTS AROUND THE WORLD</h1>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+
+  <title>Title</title>
+</head>
+
+<body>
+  <div class="control-imagen">
+    <header class="hero container ">
+      <div class="hero__encabezado">
+        <div class="hero__event">
+          <h1 class="hero__title">FIND BEST EVENTS AROUND THE WORLD</h1>
         </div>
       </div>
+      <form class="hero__form">
+
+        <input class="form__search form__searh--start" type="text" id="Buscar" name="start"
+          placeholder="Start searching" />
+        <input class="form__search form__searh--choose" type="text" id="Buscar" name="choose"
+          placeholder="Choose country" />
+      </form>
     </header>
-  </body>
+  </div>
+
+</body>
+
 </html>
