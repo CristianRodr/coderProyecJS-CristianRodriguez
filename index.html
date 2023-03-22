@@ -1,39 +1,423 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
 
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/script.js"></script>
+    <title>Title</title>
+  </head>
 
-  <title>Title</title>
-</head>
-
-<body>
-  <div class="control-imagen">
-    <header class="hero container ">
-      <div class="hero__encabezado">
-        <div class="hero__event">
-          <h1 class="hero__title">FIND BEST EVENTS AROUND THE WORLD</h1>
+  <body>
+    <div class="control-imagen">
+      <header class="hero container">
+        <div class="hero__encabezado">
+          <div class="hero__event">
+            <h1 class="hero__title">FIND BEST EVENTS AROUND THE WORLD</h1>
+          </div>
         </div>
-      </div>
-      <form class="hero__form">
+        <form class="hero__form">
+          <label class="label__start name-label">
+            <svg class="icon icon-user">
+              <use xlink:href="/img/symbol-defs.svg#icon-lupaSvg"></use>
+            </svg>
+            <input
+              class="form__search form__searh--start"
+              type="text"
+              id="Buscar"
+              name="start"
+              placeholder="Start searching"
+            />
+          </label>
 
-        <input class="form__search form__searh--start" type="text" id="Buscar" name="start"
-          placeholder="Start searching" />
-        <input class="form__search form__searh--choose" type="text" id="Buscar" name="choose"
-          placeholder="Choose country" />
-      </form>
-    </header>
-  </div>
+          <label class="label__choose name-label">
+            <svg class="icon icon-user">
+              <use xlink:href="/img/symbol-defs.svg#icon-PolygonSvg"></use>
+            </svg>
+            <input
+              class="form__search form__searh--choose"
+              type="text"
+              id="Buscar"
+              name="choose"
+              placeholder="Choose country"
+            />
+          </label>
+        </form>
+      </header>
+    </div>
 
-</body>
+    <div class="bg-body">
+      <main>
+        <div class="container__event">
+          <!-- <div class="card a1">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="card a2">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a3">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a4">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a5">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a6">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a7">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a8">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a9">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a10">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a11">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a12">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a13">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a14">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a15">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a16">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a17">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a18">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a19">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card a20">
+            <div class="card__figure">
+              <img class="card__picture" src="/img/Rectangle.jpg" alt="" />
+              <p class="prueba"></p>
+            </div>
+            <div class="card__text">
+              <h2 class="card__title">Eurovision 2021 finals</h2>
+              <time class="card__time">2021-06-09</time>
+              <div class="card__posicion">
+                <svg class="card__icon">
+                  <use xlink:href="/img/symbol-defs.svg#icon-PosicionSvg"></use>
+                </svg>
+                <p class="card__lugar">Palace of Ukraine</p>
+              </div>
+            </div>
+          </div> -->
+          <!-- fin card -->
+        </div>
+      </main>
+      <footer class="footer">
+        <section class="paginacion">
+          <ul class="ul__paginacion">
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">29</a></li>
+          </ul>
+        </section>
+        <div class="footer__title">
+          <p class="footer__pie">
+            © 2021 | All Rights Reserved | Developed with ❤️ by GoIT Students
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
