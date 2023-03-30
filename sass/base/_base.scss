@@ -1,7 +1,7 @@
 *,
 *::after,
 *::before {
-  /* outline: 3px solid red; */
+  /*outline: 3px solid red;*/
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -18,10 +18,12 @@ body {
   background: #111111;
   /* height: 1930px; */
   /* background-image: url('/img/bgbody.jpg'); */
+  position: relative;
 }
 
 .bg-body {
   background-image: url('/img/bgbody.jpg');
   background-size: cover;
   background-position: center;
+  /*height: 900px;*/
 }

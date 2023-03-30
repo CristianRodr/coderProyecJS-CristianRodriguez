@@ -5,7 +5,7 @@
   /* overflow: hidden; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
   gap: 5rem;
 }
 
@@ -31,15 +31,16 @@
       top: -11px;
       z-index: 1;
       transition: all 0.2s;
+
       /* outline-offset: 2rem; */
 
       &:hover {
         outline: 0.3rem solid rgba(220, 86, 197, 0.3);
         transform: scale(1.05);
-        width: 192px;
-        height: 315px;
-        left: -5px;
-        top: -6px;
+        width: 173px;
+        height: 215px;
+        left: 3px;
+        top: 4px;
       }
     }
   }
