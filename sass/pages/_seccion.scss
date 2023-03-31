@@ -15,6 +15,7 @@
   .card__figure {
     position: relative;
     transition: all 0.2s;
+    cursor: pointer;
 
     &:hover {
       /* outline: 0.3rem solid rgba(220, 86, 197, 0.3); */

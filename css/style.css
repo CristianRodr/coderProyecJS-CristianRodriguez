@@ -367,7 +367,8 @@ li.selected {
   display: inline-block; }
   .card .card__figure {
     position: relative;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    cursor: pointer; }
     .card .card__figure:hover {
       /* outline: 0.3rem solid rgba(220, 86, 197, 0.3); */
       transform: scale(1.05); }
