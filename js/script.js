@@ -238,11 +238,11 @@ const readingId = async function (id) {
               </div>
                 <div class="modal__letter">
                     <h3 class="modal__title">PRICES</h3>
-                    <div class="ticket"><img class="img-ticket" src="../img/ticket1.svg" alt="ticket">
+                    <div class="ticket"><img class="img-ticket" src="./img/ticket1.svg" alt="ticket">
                     <p class="modal__parafo">Standart 300-500 UAH</p></div>
                  
                     <button class="modal__btn">BUY TICKETS</button>
-                    <div class="ticket"><img class="img-ticket" src="../img/ticket1.svg" alt="ticket">
+                    <div class="ticket"><img class="img-ticket" src="./img/ticket1.svg" alt="ticket">
                     <p class="modal__parafo">VIP 1000-1500 UAH</p></div>
                     <button class="modal__btn">BUY TICKETS</button>
                 </div>

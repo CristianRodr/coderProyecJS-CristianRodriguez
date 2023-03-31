@@ -4,11 +4,12 @@
       rgba(13, 13, 13, 0.19) 0%,
       rgba(14, 14, 14, 0.8) 100%
     ),
-    url('/img/pic.jpg');
+    url('../img/pic.jpg');
   height: 506px;
   background-size: cover;
   background-position: center;
 }
+///img
 
 .container {
   margin: 0 auto;
