@@ -22,7 +22,7 @@ body {
   background-image: url("/img/bgbody.jpg");
   background-size: cover;
   background-position: center;
-  /*height: 900px;*/ }
+  height: 100vh; }
 
 .footer {
   height: 162px; }
@@ -346,6 +346,12 @@ li.selected {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5; }
+
+.ticket {
+  display: flex; }
+
+.img-ticket {
+  margin-right: 2rem; }
 
 .container__event {
   margin: 0 auto;

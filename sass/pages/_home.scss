@@ -360,3 +360,11 @@ li.selected {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+.ticket {
+  display: flex;
+}
+
+.img-ticket {
+  margin-right: 2rem;
+}
